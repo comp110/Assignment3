@@ -5,6 +5,18 @@ public class GameAux {
 	public static void intro() {
 		System.out.println("Welome to Pig!");
 	}
+	
+	public static void play() {
+    GameAux.intro();
+    Scanner keyboard=new Scanner(System.in);
+    Player p1=new Player(GameAux.setPlayer(keyboard, 1)); //p1 will represent player 1
+    Player p2=new Player(GameAux.setPlayer(keyboard, 2));//p2 will represent player 2
+    Die d1=new Die();//d1 will represent die 1 in the game
+    Die d2=new Die();//d2 will represent die 2 in the game
+    GameAux.gameLoop(p1, p2, d1, d2, keyboard);
+    String winner=Game.winningName(p1,p2);
+    GameAux.report(GameAux.getWinner(p1, p2, winner));
+	}
 
 	public static String setPlayer(Scanner goo, int pnum) {
 		System.out.println("Player " + pnum + ": Please type in your name.");

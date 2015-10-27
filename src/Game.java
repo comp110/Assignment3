@@ -1,22 +1,52 @@
 import java.util.Scanner;
 
-
 public class Game {
 
 	public static void main(String[] args) {
-		GameAux.intro();
-		Scanner keyboard=new Scanner(System.in);
-		Player p1=new Player(GameAux.setPlayer(keyboard, 1)); //p1 will represent player 1
-		Player p2=new Player(GameAux.setPlayer(keyboard, 2));//p2 will represent player 2
-		Die d1=new Die();//d1 will represent die 1 in the game
-		Die d2=new Die();//d2 will represent die 2 in the game
-		GameAux.gameLoop(p1, p2, d1, d2, keyboard);
-		String winner=winningName(p1.getScore(),p1.getName(),p2.getScore(),p2.getName());
-		GameAux.report(GameAux.getWinner(p1, p2, winner));	
+	  
+	  // Tests for Die class
+	  Tests.testDieRoll();
+	  
+	  // Once your Die test is passing, uncomment
+	  // Each of the following tests one-by-one and
+	  // get them to passing, too!
+//	  Tests.testRolledOneOnlyOnce();
+//    Tests.testSnakeEyes();
+//	  Tests.testRollResult();
+//	  Tests.testGameOver();
+//	  Tests.testWinningName();
+//	  Tests.testHolding();
+	  
+	  // Once ALL of your tests are passing, you can play Pig!
+	  // Just comment out your test runs above and uncomment the line below.
+	  // GameAux.play();
 	}
 	
-//Here you will implement the rest of the methods described in the assignment prompt.
+	// Below are the method definitions you must implement
+	// So that the program compiles AFTER successfully implementing Die#roll()
 	
+	public static boolean rolledOneOnlyOnce(int d1, int d2) {
+	  return false;
+	}
 	
+	public static boolean snakeEyes(int d1, int d2) {
+	  return false;
+	}
+	
+	public static int rollResult(Die d1, Die d2) {
+	  return -1;
+	}
+	
+	public static int gameOver(int score1, int score2) {
+	  return -1;
+	}
+	
+	public static String winningName(Player p1, Player p2) {
+		return "TODO";
+	}
+	
+	public static boolean holding(Scanner keyboard) {
+	  return false;
+	}
 
 }

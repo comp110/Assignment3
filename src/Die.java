@@ -5,9 +5,15 @@ public class Die {
 		this.value = 0;
 	}
 
-//this is where you will implement your roll method 
+	public void roll() {
+	  this.value = 0;
+	}
 	
 	int getValue() {
 		return this.value;
+	}
+	
+	void setValue(int value) {
+	  this.value = value;
 	}
 }
