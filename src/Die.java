@@ -5,7 +5,7 @@ public class Die {
 		this.value = 0;
 	}
 
-	public void roll() {
+	public void roll() {	//You must edit this method.
 	  this.value = 0;
 	}
 	
