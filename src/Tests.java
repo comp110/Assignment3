@@ -79,8 +79,7 @@ public class Tests {
     boolean rolledOne = false, rolledSnakeEyes = false, rolledPoints = false;
     boolean passingTest = true;
     for(int i = 0; i < 10000; i++) {
-    	die1.roll();
-    	die2.roll();
+ 
       int result = Game.rollResult(die1, die2);
       if(result == -1) {
         passingTest = passingTest && expect(true, Game.snakeEyes(die1.getValue(),die2.getValue()), "-1 is for snakeEyes");

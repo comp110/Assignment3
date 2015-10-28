@@ -43,12 +43,11 @@ public class GameAux {
 		int roundNumber = 1;
 		while (Game.gameOver(p1.getScore(), p2.getScore()) != 1) {
 			System.out.println("Round " + roundNumber);
-			System.out.println("Enter any key to continue");
+			System.out.println("Press enter to continue");
+			k.nextLine();
 			System.out.println();
 			System.out.println();
 			System.out.println();
-			System.out.println();
-			k.next();
 			System.out.println("" + p1.getName() + "'s turn.");
 			boolean p1turn = true;
 			int potential1 = 0;
@@ -80,9 +79,8 @@ public class GameAux {
 					}
 				}
 			}
-			System.out.println("Enter any key to continue");
-			System.out.println();
-			k.next();
+			System.out.println("Press enter to continue");
+			k.nextLine();
 			System.out.println();
 			System.out.println();
 			System.out.println();
