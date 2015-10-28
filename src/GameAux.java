@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class GameAux {
 
 	public static void intro() {
-		System.out.println("Welome to Pig!");
+		System.out.println("Welcome to Pig!");
 	}
 	
 	public static void play() {
