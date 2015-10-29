@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class GameAux {
 
 	public static void intro() {
-		System.out.println("Welcome to Pig!");
+		System.out.println("Welome to Pig!");
 	}
 	
 	public static void play() {
@@ -43,7 +43,8 @@ public class GameAux {
 		int roundNumber = 1;
 		while (Game.gameOver(p1.getScore(), p2.getScore()) != 1) {
 			System.out.println("Round " + roundNumber);
-			System.out.println("Press enter to continue");
+			System.out.println("Press enter to continue (Press again if it doesn't work)");
+			k.nextLine();
 			k.nextLine();
 			System.out.println();
 			System.out.println();
@@ -79,7 +80,8 @@ public class GameAux {
 					}
 				}
 			}
-			System.out.println("Press enter to continue");
+			System.out.println("Press enter to continue (Press again if it doesn't work)");
+			k.nextLine();
 			k.nextLine();
 			System.out.println();
 			System.out.println();
